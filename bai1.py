@@ -20,7 +20,7 @@ def transferWithNegative(n):
         else:
             k[i]=0
     
-    
+    123
     # Chuyen doi list sang string
     for i in k:
         kq += str(i)
