@@ -20,10 +20,12 @@ def transferWithNegative(n):
         else:
             k[i]=0
     
-    123
+  
     # Chuyen doi list sang string
     for i in k:
         kq += str(i)
+      
+
     return kq
 
 def transferWithPositive(n):
@@ -41,8 +43,10 @@ def transferWithPositive(n):
 
     k.reverse() # Dao nguoc danh sach
     # Chuyen doi list sang string
+ 
     for i in k:
         kq += str(i)
+       
     return kq
 
 #------------------------------------------------------------------------------------------------------------------
@@ -68,6 +72,7 @@ def singlePrecision(n): # chuyển về dạng single Precision
     k=['']
     if (n>0): k.append('0')  # kiểm tra bit dấu là âm hay dương
     if (n<0): k.append('1')
+    k.append(' | ')
     n=abs(n) 
     x1=int(n)
     x2=round(n-x1,15)
@@ -98,6 +103,7 @@ def singlePrecision(n): # chuyển về dạng single Precision
 
 
     k.append(exponentStr)
+    k.append(' | ')
     if (exponent>0) :
         for i in range(1,len(k1)):
             k.append(k1[i])
